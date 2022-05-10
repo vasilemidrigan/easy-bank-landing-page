@@ -19,7 +19,7 @@
     />
 
     <title>Frontend Mentor | Easybank landing page</title>
-    <link rel="stylesheet" href="./app/scss/style.css" />
+    <link rel="stylesheet" href="./app/js/scss/main.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -32,30 +32,35 @@
     </style>
   </head>
   <body>
-    <header class="header">
-      <nav class="flex flex-jc-sb flex-ai-c">
-        <a href="/" class="header__logo">
-          <img src="images/logo.svg" alt="Easybank" />
+    <!-- Header -->
+    <header class="header flex flex-jc-sb flex-ai-c">
+      <!-- Header Logo -->
+      <div class="header--logo">
+        <a href="#">
+          <img src="./images/logo.svg" alt="Easybank Logo" />
         </a>
-
-        <a href="#" class="header__menu hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-
-        <div class="header__links hide-for-mobile">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">Blog</a>
-          <a href="#">Careers</a>
-        </div>
-
-        <a class="button header__cta hide-for-mobile" href="#"
-          >Request Invite</a
-        >
-      </nav>
+      </div>
+      <!-- Header Menu -->
+      <div class="header--menu hide-for-mob">
+        <a href="#" class="header--menu--link">Home</a>
+        <a href="#" class="header--menu--link">About</a>
+        <a href="#" class="header--menu--link">Contact</a>
+        <a href="#" class="header--menu--link">Blog</a>
+        <a href="#" class="header--menu--link">Careers</a>
+      </div>
+      <!-- Header Button CTA -->
+      <a
+        href="#"
+        class="header--button--cta hide-for-mob flex flex-ai-c flex-jc-c"
+      >
+        Request Invite
+      </a>
+      <!-- Header Hamburger -->
+      <div class="header--hamburger hide-for-desk">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
 
     <!-- Home About Contact Blog Careers Request Invite Next generation digital
