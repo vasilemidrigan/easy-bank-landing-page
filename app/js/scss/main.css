@@ -131,9 +131,27 @@ header .header--hamburger span {
   height: 0.0625rem;
   background-color: #2d314d;
   display: block;
+  -webkit-transform-origin: 5px 0.8px;
+          transform-origin: 5px 0.8px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 header .header--hamburger span:not(:last-child) {
   margin-bottom: 4px;
+}
+
+header.open .header--hamburger span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header.open .header--hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+header.open .header--hamburger span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 /*# sourceMappingURL=main.css.map */

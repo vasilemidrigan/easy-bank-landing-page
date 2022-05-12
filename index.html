@@ -10,17 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
-    <title>Frontend Mentor | Easybank landing page</title>
     <link rel="stylesheet" href="./app/js/scss/main.css" />
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script src="app/js/script.js" defer></script>
+    <title>Easybank landing page</title>
     <style>
       .attribution {
         font-size: 11px;
@@ -34,6 +32,8 @@
   <body>
     <!-- Header -->
     <header class="header flex flex-jc-sb flex-ai-c">
+      <!-- Overlay -->
+      <div class="overlay"></div>
       <!-- Header Logo -->
       <div class="header--logo">
         <a href="#">
@@ -56,7 +56,7 @@
         Request Invite
       </a>
       <!-- Header Hamburger -->
-      <div class="header--hamburger hide-for-desk">
+      <div id="hamburger" class="header--hamburger hide-for-desk">
         <span></span>
         <span></span>
         <span></span>
