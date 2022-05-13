@@ -74,20 +74,30 @@ header {
       }
     }
   }
-  // Overlay and Hamburger Animation
-  &.open {
-    .overlay {
-    }
+  // Hamburger animation and overlay
+  .overlay {
+    display: block;
+  }
+  &.active {
     .header--hamburger {
-      span:first-child {
+      > span:first-child {
         transform: rotate(45deg);
       }
-      span:nth-child(2) {
+      > span:nth-child(2) {
         opacity: 0;
       }
-      span:last-child {
+      > span:last-child {
         transform: rotate(-45deg);
       }
     }
+  }
+  .overlay {
+    opacity: 0;
+    background: linear-gradient(to bottom, $dark-blue, transparent);
+    position: fixed;
+    top: 4.0625rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }

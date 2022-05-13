@@ -20,7 +20,7 @@ a {
   color: $grayish-blue;
 }
 
-// Flexbox
+// Flexbox (helper classes)
 
 .flex {
   display: flex;
@@ -38,10 +38,10 @@ a {
   align-items: center;
 }
 
-// Visibility
+// Visibility (helper classes)
 
 // hide for mobile
-.hide-for-mob {  
+.hide-for-mob {
   @include breakpoint-down(medium) {
     display: none;
   }
