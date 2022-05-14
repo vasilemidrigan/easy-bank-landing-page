@@ -19,6 +19,10 @@ a {
   text-decoration: none;
   color: $grayish-blue;
 }
+// No scroll for mobile menu active state
+.noscroll {
+  overflow: hidden;
+}
 
 // Flexbox (helper classes)
 
@@ -36,6 +40,12 @@ a {
 
 .flex-ai-c {
   align-items: center;
+}
+
+// Spacing
+.container__margin {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 // Visibility (helper classes)
