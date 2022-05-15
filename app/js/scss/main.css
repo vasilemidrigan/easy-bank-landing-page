@@ -84,6 +84,7 @@ html {
 }
 
 body {
+  min-width: 22.5rem;
   margin: 0;
   padding: 0;
   line-height: 1.3;
@@ -128,6 +129,10 @@ a {
   margin-right: 1.5rem;
 }
 
+.p-lr {
+  padding: 0 1.5rem;
+}
+
 @media (max-width: 63.9375rem) {
   .hide-for-mob {
     display: none;
@@ -138,6 +143,25 @@ a {
   .hide-for-desk {
     display: none;
   }
+}
+
+.button-cta {
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  width: 10.1875rem;
+  height: 2.75rem;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.button-cta:hover {
+  opacity: 0.75;
 }
 
 header {
@@ -183,25 +207,6 @@ header .header--menu--link:hover {
 
 header .header--menu--link:hover::before {
   opacity: 1;
-}
-
-header .header--button--cta {
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
-  color: white;
-  font-size: 0.875rem;
-  font-weight: 700;
-  width: 10.1875rem;
-  height: 3.8125rem;
-  border-radius: 50px;
-  cursor: pointer;
-  opacity: 1;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-}
-
-header .header--button--cta:hover {
-  opacity: 0.75;
 }
 
 header .header--hamburger {
@@ -274,5 +279,51 @@ header .header__mob-menu a {
 
 header .header__mob-menu a:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+
+.hero__img {
+  position: relative;
+  background-image: url(../../../images/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 17.6875rem;
+  background-position: 0px -3rem;
+}
+
+.hero__img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../images/image-mockups.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center -6.0625rem;
+}
+
+.hero__txt {
+  text-align: center;
+}
+
+.hero__txt h1 {
+  color: #2d314d;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 2.9375rem;
+  letter-spacing: -0.714286px;
+  margin-bottom: 1rem;
+}
+
+.hero__txt p {
+  color: #9698a6;
+  font-weight: 300;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  letter-spacing: -0.234375px;
+}
+
+.hero__txt .button-cta {
+  margin: 0 auto;
+  margin: 2rem auto 5.4375rem auto;
 }
 /*# sourceMappingURL=main.css.map */

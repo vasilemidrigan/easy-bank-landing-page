@@ -1,0 +1,45 @@
+// --- Hero Section
+
+.hero {
+  &__img {
+    position: relative;
+    background-image: url(../../../images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 17.6875rem;
+    background-position: 0px -3rem;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url(../../../images/image-mockups.png);
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: center -6.0625rem;
+    }
+  }
+
+  &__txt {
+    text-align: center;
+    h1 {
+      color: $dark-blue;
+      font-weight: 300;
+      font-size: 2.5rem;
+      line-height: 2.9375rem;
+      letter-spacing: -0.714286px;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: $grayish-blue;
+      font-weight: 300;
+      font-size: $mob-lg;
+      line-height: $lh-mob-lg;
+      letter-spacing: -0.234375px;
+    }
+    .button-cta {
+      margin: 0 auto;
+      margin: 2rem auto 5.4375rem auto;
+    }
+  }
+}

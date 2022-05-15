@@ -40,23 +40,6 @@ header {
         }
       }
     }
-    // Header Buttton CTA
-    &--button--cta {
-      background: $gradient__green-to-cyan;
-      color: $white;
-      font-size: 0.875rem;
-      font-weight: 700;
-      width: 10.1875rem;
-      height: 3.8125rem;
-      border-radius: 50px;
-      cursor: pointer;
-      opacity: 1;
-      transition: opacity 300ms ease-in-out;
-
-      &:hover {
-        opacity: 0.75;
-      }
-    }
     // Header Hamburger
     &--hamburger {
       width: 1.5rem;
