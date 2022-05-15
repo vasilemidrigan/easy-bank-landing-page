@@ -124,9 +124,16 @@ a {
           align-items: center;
 }
 
-.container__margin {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+.flex-dir-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 .p-lr {
@@ -167,6 +174,13 @@ a {
 header {
   padding: 1.375rem 1.5rem;
   position: relative;
+}
+
+@media (min-width: 64rem) {
+  header {
+    padding: 1.375rem 10.3125rem;
+    min-width: 89rem;
+  }
 }
 
 header .header--logo {
@@ -281,6 +295,16 @@ header .header__mob-menu a:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
+@media (min-width: 64rem) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 41rem;
+    min-width: 89rem;
+  }
+}
+
 .hero__img {
   position: relative;
   background-image: url(../../../images/bg-intro-mobile.svg);
@@ -288,6 +312,20 @@ header .header__mob-menu a:not(:last-child) {
   background-size: cover;
   min-height: 17.6875rem;
   background-position: 0px -3rem;
+}
+
+@media (min-width: 64rem) {
+  .hero__img {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    background-image: url(../../../images/bg-intro-desktop.svg);
+    background-size: 210%;
+    background-position: -84px -20rem;
+  }
 }
 
 .hero__img::before {
@@ -301,8 +339,26 @@ header .header__mob-menu a:not(:last-child) {
   background-position: center -6.0625rem;
 }
 
+@media (min-width: 64rem) {
+  .hero__img::before {
+    height: 116%;
+    background-size: 108% 116%;
+    background-position: 98px -6.0625rem;
+  }
+}
+
 .hero__txt {
   text-align: center;
+}
+
+@media (min-width: 64rem) {
+  .hero__txt {
+    text-align: left;
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+    padding: 10.625rem 5.375rem 10.625rem 10.3125rem;
+  }
 }
 
 .hero__txt h1 {
@@ -314,6 +370,15 @@ header .header__mob-menu a:not(:last-child) {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 64rem) {
+  .hero__txt h1 {
+    font-size: 3.375rem;
+    line-height: 4rem;
+    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .hero__txt p {
   color: #9698a6;
   font-weight: 300;
@@ -322,8 +387,23 @@ header .header__mob-menu a:not(:last-child) {
   letter-spacing: -0.234375px;
 }
 
+@media (min-width: 64rem) {
+  .hero__txt p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.28125px;
+    margin: 0;
+  }
+}
+
 .hero__txt .button-cta {
   margin: 0 auto;
   margin: 2rem auto 5.4375rem auto;
+}
+
+@media (min-width: 64rem) {
+  .hero__txt .button-cta {
+    margin: 2.25rem auto 0 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

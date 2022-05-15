@@ -1,6 +1,11 @@
 // --- Hero Section
 
 .hero {
+  @include breakpoint-up(large) {
+    display: flex;
+    min-height: 41rem;
+    min-width: 89rem;
+  }
   &__img {
     position: relative;
     background-image: url(../../../images/bg-intro-mobile.svg);
@@ -8,6 +13,13 @@
     background-size: cover;
     min-height: 17.6875rem;
     background-position: 0px -3rem;
+    @include breakpoint-up(large) {
+      flex: 3;
+      order: 1;
+      background-image: url(../../../images/bg-intro-desktop.svg);
+      background-size: 210%;
+      background-position: -84px -20rem;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -17,11 +29,21 @@
       background-repeat: no-repeat;
       background-size: 90%;
       background-position: center -6.0625rem;
+      @include breakpoint-up(large) {
+        height: 116%;
+        background-size: 108% 116%;
+        background-position: 98px -6.0625rem;
+      }
     }
   }
 
   &__txt {
     text-align: center;
+    @include breakpoint-up(large) {
+      text-align: left;
+      flex: 1.5;
+      padding: 10.625rem 5.375rem 10.625rem 10.3125rem;
+    }
     h1 {
       color: $dark-blue;
       font-weight: 300;
@@ -29,6 +51,12 @@
       line-height: 2.9375rem;
       letter-spacing: -0.714286px;
       margin-bottom: 1rem;
+      @include breakpoint-up(large) {
+        font-size: 3.375rem;
+        line-height: 4rem;
+        letter-spacing: -1px;
+        margin-bottom: 1.5rem;
+      }
     }
     p {
       color: $grayish-blue;
@@ -36,10 +64,19 @@
       font-size: $mob-lg;
       line-height: $lh-mob-lg;
       letter-spacing: -0.234375px;
+      @include breakpoint-up(large) {
+        font-size: $desk-lg;
+        line-height: 1.75rem;
+        letter-spacing: -0.28125px;
+        margin: 0;
+      }
     }
     .button-cta {
       margin: 0 auto;
       margin: 2rem auto 5.4375rem auto;
+      @include breakpoint-up(large) {
+        margin: 2.25rem auto 0 0;
+      }
     }
   }
 }
