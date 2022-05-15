@@ -2,11 +2,16 @@
 
 header {
   padding: 1.375rem 1.5rem;
+  margin: 0 auto;
   position: relative;
-  @include breakpoint-up(large) {
+  @include breakpoint-up(medium) {
+    max-width: 62.85rem;
+  }
+  @include breakpoint-up(xlarge) {
     padding: 1.375rem 10.3125rem;
     min-width: 89rem;
   }
+
   .header {
     // Logo
     &--logo {

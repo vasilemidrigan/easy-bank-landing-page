@@ -173,10 +173,17 @@ a {
 
 header {
   padding: 1.375rem 1.5rem;
+  margin: 0 auto;
   position: relative;
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 40rem) {
+  header {
+    max-width: 62.85rem;
+  }
+}
+
+@media (min-width: 87.5rem) {
   header {
     padding: 1.375rem 10.3125rem;
     min-width: 89rem;
@@ -295,13 +302,13 @@ header .header__mob-menu a:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 87.5rem) {
   .hero {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     min-height: 41rem;
-    min-width: 89rem;
+    max-width: 89rem;
   }
 }
 
@@ -314,7 +321,20 @@ header .header__mob-menu a:not(:last-child) {
   background-position: 0px -3rem;
 }
 
+@media (min-width: 40rem) {
+  .hero__img {
+    min-height: 22.6875rem;
+  }
+}
+
 @media (min-width: 64rem) {
+  .hero__img {
+    background-position: -116px -32rem;
+    background-size: 126%;
+  }
+}
+
+@media (min-width: 87.5rem) {
   .hero__img {
     -webkit-box-flex: 3;
         -ms-flex: 3;
@@ -339,11 +359,27 @@ header .header__mob-menu a:not(:last-child) {
   background-position: center -6.0625rem;
 }
 
+@media (min-width: 40rem) {
+  .hero__img::before {
+    background-position: center -6.0625rem;
+    height: 109%;
+    background-size: 65% 130%;
+  }
+}
+
 @media (min-width: 64rem) {
   .hero__img::before {
-    height: 116%;
-    background-size: 108% 116%;
-    background-position: 98px -6.0625rem;
+    height: 155%;
+    background-size: 59% 112%;
+    background-position: 253px -10.0625rem;
+  }
+}
+
+@media (min-width: 87.5rem) {
+  .hero__img::before {
+    height: 121%;
+    background-size: 112% 122%;
+    background-position: 107px -10.0625rem;
   }
 }
 
@@ -351,7 +387,20 @@ header .header__mob-menu a:not(:last-child) {
   text-align: center;
 }
 
+@media (min-width: 40rem) {
+  .hero__txt {
+    padding: 20px 0 0 0;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 64rem) {
+  .hero__txt {
+    padding: 80px 100px 0px 100px;
+  }
+}
+
+@media (min-width: 87.5rem) {
   .hero__txt {
     text-align: left;
     -webkit-box-flex: 1.5;
@@ -401,7 +450,13 @@ header .header__mob-menu a:not(:last-child) {
   margin: 2rem auto 5.4375rem auto;
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 40rem) {
+  .hero__txt .button-cta {
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 87.5rem) {
   .hero__txt .button-cta {
     margin: 2.25rem auto 0 0;
   }
