@@ -91,6 +91,16 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  color: #2d314d;
+}
+
+p {
+  color: #9698a6;
+}
+
 a {
   text-decoration: none;
   color: #9698a6;
@@ -460,5 +470,52 @@ header .header__mob-menu a:not(:last-child) {
   .hero__txt .button-cta {
     margin: 2.25rem auto 0 0;
   }
+}
+
+.feature {
+  text-align: center;
+  background-color: #fafafa;
+  padding: 4rem 1.5rem;
+}
+
+.feature__intro {
+  margin-bottom: 3.5rem;
+}
+
+.feature__intro h2 {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.571429px;
+  margin-top: 0;
+}
+
+.feature__intro p {
+  font-size: 0.9375rem;
+  line-height: 25px;
+  letter-spacing: -0.234375px;
+}
+
+.feature__grid__icon {
+  margin-bottom: 1.5rem;
+}
+
+.feature__grid__icon img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.feature__grid__header {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  margin-bottom: 1rem;
+}
+
+.feature__grid__describe {
+  font-size: 0.9375rem;
+  line-height: 25px;
+  letter-spacing: -0.234375px;
 }
 /*# sourceMappingURL=main.css.map */

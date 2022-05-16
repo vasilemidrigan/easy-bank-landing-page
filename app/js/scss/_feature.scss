@@ -1,0 +1,49 @@
+// --- Feature Section
+
+.feature {
+  text-align: center;
+  background-color: $very-light-gray;
+  padding: 4rem 1.5rem; // 64px 24px
+  &__intro {
+    margin-bottom: 3.5rem; // 56px
+    h2 {
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: -0.571429px;
+      margin-top: 0;
+    }
+    p {
+      font-size: $mob-lg;
+      line-height: 25px;
+      letter-spacing: -0.234375px;
+    }
+  }
+  // Grid Section
+  &__grid {
+    &__item {
+    }
+
+    &__icon {
+      margin-bottom: 1.5rem;
+      img {
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+    }
+
+    &__header {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.428571px;
+      margin-bottom: 1rem;
+    }
+
+    &__describe {
+      font-size: $mob-lg;
+      line-height: 25px;
+      letter-spacing: -0.234375px;
+    }
+  }
+}
