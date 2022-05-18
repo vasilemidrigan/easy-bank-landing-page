@@ -1,7 +1,7 @@
 // --- Hero Section
 
 .hero {
-  @include breakpoint-up(xlarge) {
+  @include breakpoint-up(large) {
     display: flex;
     min-height: 41rem;
     max-width: 89rem;
@@ -14,13 +14,11 @@
     min-height: 17.6875rem;
     background-position: 0px -3rem;
     @include breakpoint-up(medium) {
-      min-height: 22.6875rem;
+      background-size: 100% 122%;
+      min-height: 17.6875rem;
+      background-position: 0px 0rem;
     }
     @include breakpoint-up(large) {
-      background-position: -116px -32rem;
-      background-size: 126%;
-    }
-    @include breakpoint-up(xlarge) {
       flex: 3;
       order: 1;
       background-image: url(../../../images/bg-intro-desktop.svg);
@@ -44,15 +42,9 @@
       }
 
       @include breakpoint-up(large) {
-        height: 155%;
-        background-size: 59% 112%;
-        background-position: 253px -10.0625rem;
-      }
-
-      @include breakpoint-up(xlarge) {
         height: 121%;
-        background-size: 112% 122%;
-        background-position: 107px -10.0625rem;
+        background-size: 93%, 90%;
+        background-position: 180px -9.0625rem;
       }
     }
   }
@@ -60,15 +52,16 @@
   &__txt {
     text-align: center;
     @include breakpoint-up(medium) {
-      padding: 20px 0 0 0;
       margin: 0 auto;
+      padding: 0 6.375rem 5.625rem 3.3125rem;
+      max-width: 70%;
+      text-align: center;
+      flex: 1.5;
     }
     @include breakpoint-up(large) {
-      padding: 80px 100px 0px 100px;
+      text-align: left;
     }
     @include breakpoint-up(xlarge) {
-      text-align: left;
-      flex: 1.5;
       padding: 10.625rem 5.375rem 10.625rem 10.3125rem;
     }
     h1 {
@@ -104,7 +97,7 @@
       @include breakpoint-up(medium) {
         margin: 20px auto;
       }
-      @include breakpoint-up(xlarge) {
+      @include breakpoint-up(large) {
         margin: 2.25rem auto 0 0;
       }
     }

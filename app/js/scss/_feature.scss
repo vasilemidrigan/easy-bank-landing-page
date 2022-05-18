@@ -3,27 +3,61 @@
 .feature {
   text-align: center;
   background-color: $very-light-gray;
-  padding: 4rem 1.5rem; // 64px 24px
+  padding: 4rem 1.5rem;
+  max-width: 89rem;
+  & p {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  @include breakpoint-up(large) {
+    padding-left: 55px;
+  }
+  @include breakpoint-up(xlarge) {
+    padding: 5.875rem 10.3125rem;
+  }
+  // Intro
   &__intro {
-    margin-bottom: 3.5rem; // 56px
+    margin-bottom: 3.5rem;
     h2 {
       font-weight: 300;
       font-size: 32px;
       line-height: 38px;
       letter-spacing: -0.571429px;
       margin-top: 0;
+      @include breakpoint-up(large) {
+        text-align: left;
+      }
     }
-    p {
+    & p {
       font-size: $mob-lg;
       line-height: 25px;
       letter-spacing: -0.234375px;
+      @include breakpoint-up(large) {
+        margin: 10px;
+        text-align: left;
+      }
     }
   }
   // Grid Section
   &__grid {
-    &__item {
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-wrap: wrap;
     }
-
+    @include breakpoint-up(large) {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 30px;
+    }
+    &__item {
+      padding-bottom: 2rem;
+      @include breakpoint-up(medium) {
+        width: 50%;
+      }
+      @include breakpoint-up(large) {
+        width: auto;
+      }
+    }
     &__icon {
       margin-bottom: 1.5rem;
       img {
