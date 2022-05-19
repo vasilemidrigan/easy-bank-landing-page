@@ -1,23 +1,56 @@
 // --- Footer
 
 .footer {
-  text-align: center;
-  padding: 2.5rem 4.8125rem;
   background-color: $dark-blue;
   color: $white;
+  text-align: center;
+  padding: 2.5rem 4.8125rem;
   & div:not(:last-child) {
     margin-bottom: 2rem;
   }
-  &__logo {
+  // reset 2 column links margin
+  & div:nth-child(3) {
+    margin-bottom: 0;
   }
+
+  @include breakpoint-up(large) {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    grid-template-areas:
+      "logo links links copyright"
+      "socials links links copyright";
+    padding: 3rem 10.3125rem;
+  }
+  // Logo
+  &__logo {
+    @include breakpoint-up(large) {
+      grid-area: logo;
+    }
+  }
+  // Social Icon Links
   &__socials {
     a:not(:last-child) {
       margin-right: 1rem;
     }
+    @include breakpoint-up(large) {
+      grid-area: socials;
+    }
   }
+  // Navigation Links
   &__links {
     line-height: 1.625rem;
   }
+  & .col1 {
+    @include breakpoint-up(large) {
+      grid-area: links1;
+    }
+  }
+  & .col2 {
+    @include breakpoint-up(large) {
+      grid-area: links2;
+    }
+  }
+  // Copyrights and Button CTA
   &__copyright {
     .button-cta {
       margin: 0 auto;
@@ -28,5 +61,8 @@
     font-size: 15px;
     line-height: 26px;
     letter-spacing: -0.234375px;
+    @include breakpoint-up(large) {
+      grid-area: copyright;
+    }
   }
 }
