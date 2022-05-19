@@ -89,12 +89,19 @@ body {
   padding: 0;
   line-height: 1.3;
   font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
 h2,
 h3 {
   color: #2d314d;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 p {
@@ -573,5 +580,36 @@ header .header__mob-menu a:not(:last-child) {
   font-size: 0.9375rem;
   line-height: 25px;
   letter-spacing: -0.234375px;
+}
+
+.footer {
+  text-align: center;
+  padding: 2.5rem 4.8125rem;
+  background-color: #2d314d;
+  color: white;
+}
+
+.footer div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer__socials a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.footer__links {
+  line-height: 1.625rem;
+}
+
+.footer__copyright {
+  color: #9698a6;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.234375px;
+}
+
+.footer__copyright .button-cta {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

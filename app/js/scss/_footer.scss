@@ -1,0 +1,32 @@
+// --- Footer
+
+.footer {
+  text-align: center;
+  padding: 2.5rem 4.8125rem;
+  background-color: $dark-blue;
+  color: $white;
+  & div:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  &__logo {
+  }
+  &__socials {
+    a:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+  &__links {
+    line-height: 1.625rem;
+  }
+  &__copyright {
+    .button-cta {
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+    // copyright text
+    color: $grayish-blue;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.234375px;
+  }
+}
