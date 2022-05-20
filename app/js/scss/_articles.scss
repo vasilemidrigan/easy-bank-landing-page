@@ -4,6 +4,8 @@
   padding: 5.5rem 1.5rem;
   background-color: $very-light-gray;
   .article {
+    margin: 0 auto;
+    max-width: 25rem;
     background-color: $white;
     border-radius: 0.3125rem;
     &:not(:last-child) {

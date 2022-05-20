@@ -469,7 +469,7 @@ header .header__mob-menu a:not(:last-child) {
 
 .feature {
   text-align: center;
-  background-color: #fafafa;
+  background-color: #f3f4f6;
   padding: 4rem 1.5rem;
   max-width: 89rem;
 }
@@ -588,6 +588,8 @@ header .header__mob-menu a:not(:last-child) {
 }
 
 .articles .article {
+  margin: 0 auto;
+  max-width: 25rem;
   background-color: white;
   border-radius: 0.3125rem;
 }
