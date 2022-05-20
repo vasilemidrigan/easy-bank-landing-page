@@ -17,8 +17,8 @@
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
     grid-template-areas:
-      "logo links links copyright"
-      "socials links links copyright";
+      "logo links1 links2 copyright"
+      "socials links1 links2 copyright";
     padding: 3rem 10.3125rem;
   }
   // Logo

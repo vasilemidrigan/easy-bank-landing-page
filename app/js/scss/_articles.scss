@@ -1,0 +1,39 @@
+//  --- Articles
+
+.articles {
+  padding: 5.5rem 1.5rem;
+  background-color: $very-light-gray;
+  .article {
+    background-color: $white;
+    border-radius: 0.3125rem;
+    &:not(:last-child) {
+      margin-bottom: 1.5625rem;
+    }
+    &__img {
+      border-radius: 5px 5px 0px 0px;
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 25rem;
+    }
+    &__text {
+      padding: 1.5625rem 1.9375rem;
+      span {
+        color: $grayish-blue;
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: -0.15625px;
+      }
+      h4 {
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: -0.285714px;
+      }
+      p {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.203125px;
+      }
+    }
+  }
+}

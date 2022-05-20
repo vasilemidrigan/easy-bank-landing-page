@@ -582,6 +582,51 @@ header .header__mob-menu a:not(:last-child) {
   letter-spacing: -0.234375px;
 }
 
+.articles {
+  padding: 5.5rem 1.5rem;
+  background-color: #fafafa;
+}
+
+.articles .article {
+  background-color: white;
+  border-radius: 0.3125rem;
+}
+
+.articles .article:not(:last-child) {
+  margin-bottom: 1.5625rem;
+}
+
+.articles .article__img {
+  border-radius: 5px 5px 0px 0px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 25rem;
+}
+
+.articles .article__text {
+  padding: 1.5625rem 1.9375rem;
+}
+
+.articles .article__text span {
+  color: #9698a6;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: -0.15625px;
+}
+
+.articles .article__text h4 {
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: -0.285714px;
+}
+
+.articles .article__text p {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.203125px;
+}
+
 .footer {
   background-color: #2d314d;
   color: white;
@@ -604,7 +649,7 @@ header .header__mob-menu a:not(:last-child) {
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
     -ms-grid-columns: 1fr 1fr;
         grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
-        grid-template-areas: "logo links links copyright" "socials links links copyright";
+        grid-template-areas: "logo links1 links2 copyright" "socials links1 links2 copyright";
     padding: 3rem 10.3125rem;
   }
 }
