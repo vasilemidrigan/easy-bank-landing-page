@@ -12,10 +12,10 @@
   & div:nth-child(3) {
     margin-bottom: 0;
   }
-
   @include breakpoint-up(large) {
+    text-align: left;
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    grid-template: repeat(1, minmax(30px, 80px)) / 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "logo links1 links2 copyright"
       "socials links1 links2 copyright";

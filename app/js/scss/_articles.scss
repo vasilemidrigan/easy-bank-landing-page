@@ -14,7 +14,8 @@
     line-height: 64px;
     letter-spacing: -0.714286px;
     margin: 0 0 1.9375rem 0;
-    @include breakpoint-up(large) {
+    // Specific media queries
+    @media (min-width: 1360px) {
       text-align: left;
     }
   }
@@ -26,10 +27,20 @@
       max-width: 45rem;
       margin: 0 auto;
     }
-    @include breakpoint-up(large) {
+    // Specific media queries
+    // Change grid at 1360px cause at lower rate it's
+    //   seems to be pretty ugly.
+    @media (min-width: 1360px) {
       grid-template-columns: repeat(4, 1fr);
       max-width: unset;
+      gap: 30px;
+      max-width: unset;
+      margin: unset;
     }
+    // @include breakpoint-up(large) {
+    //   grid-template-columns: repeat(4, 1fr);
+    //   max-width: unset;
+    // }
     .article {
       margin: 0 auto;
       max-width: 25rem;
