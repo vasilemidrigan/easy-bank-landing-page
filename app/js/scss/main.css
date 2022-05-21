@@ -602,7 +602,17 @@ header .header__mob-menu a:not(:last-child) {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 64rem) {
+  .articles__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    max-width: unset;
   }
 }
 
@@ -620,8 +630,14 @@ header .header__mob-menu a:not(:last-child) {
 }
 
 @media (min-width: 40rem) {
+  .articles__grid .article {
+    max-width: 45rem;
+  }
+  .articles__grid .article:not(:last-child) {
+    margin-bottom: 0;
+  }
   .articles__grid .article:last-child {
-    margin-bottom: 1.5625rem;
+    margin-bottom: 0;
   }
 }
 
@@ -636,6 +652,7 @@ header .header__mob-menu a:not(:last-child) {
 @media (min-width: 40rem) {
   .articles__grid .article__img {
     min-height: 14.6875rem;
+    max-height: 235px;
   }
 }
 

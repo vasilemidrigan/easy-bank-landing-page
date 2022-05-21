@@ -18,7 +18,13 @@
     @include breakpoint-up(medium) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 30px;
+      max-width: 45rem;
+      margin: 0 auto;
+    }
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: unset;
     }
     .article {
       margin: 0 auto;
@@ -30,8 +36,12 @@
         margin-bottom: 1.5625rem;
       }
       @include breakpoint-up(medium) {
+        max-width: 45rem;
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
         &:last-child {
-          margin-bottom: 1.5625rem;
+          margin-bottom: 0;
         }
       }
       &__img {
@@ -42,6 +52,7 @@
         max-width: 25rem;
         @include breakpoint-up(medium) {
           min-height: 14.6875rem;
+          max-height: 235px;
         }
       }
       &__text {
