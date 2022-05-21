@@ -5,15 +5,16 @@
   background-color: $light-grayish-blue;
   padding: 4rem 1.5rem;
   max-width: 89rem;
-  & p {
-    max-width: 350px;
-    margin: 0 auto;
-  }
   @include breakpoint-up(large) {
     padding-left: 55px;
+    text-align: left;
   }
   @include breakpoint-up(xlarge) {
     padding: 5.875rem 10.3125rem;
+  }
+  & p {
+    max-width: 350px;
+    margin: 0 auto;
   }
   // Intro
   &__intro {

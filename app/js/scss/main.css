@@ -474,14 +474,10 @@ header .header__mob-menu a:not(:last-child) {
   max-width: 89rem;
 }
 
-.feature p {
-  max-width: 350px;
-  margin: 0 auto;
-}
-
 @media (min-width: 64rem) {
   .feature {
     padding-left: 55px;
+    text-align: left;
   }
 }
 
@@ -489,6 +485,11 @@ header .header__mob-menu a:not(:last-child) {
   .feature {
     padding: 5.875rem 10.3125rem;
   }
+}
+
+.feature p {
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .feature__intro {
@@ -587,6 +588,13 @@ header .header__mob-menu a:not(:last-child) {
   background-color: #fafafa;
 }
 
+@media (min-width: 64rem) {
+  .articles {
+    padding: 5rem 10.3125rem;
+    max-width: 89rem;
+  }
+}
+
 .articles h2 {
   text-align: center;
   font-weight: 300;
@@ -594,6 +602,12 @@ header .header__mob-menu a:not(:last-child) {
   line-height: 64px;
   letter-spacing: -0.714286px;
   margin: 0 0 1.9375rem 0;
+}
+
+@media (min-width: 64rem) {
+  .articles h2 {
+    text-align: left;
+  }
 }
 
 @media (min-width: 40rem) {

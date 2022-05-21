@@ -3,9 +3,10 @@
 .articles {
   padding: 5.5rem 1.5rem;
   background-color: $very-light-gray;
-  // @include breakpoint-up(large) {
-  //   padding: 5rem 10.3125rem;
-  // }
+  @include breakpoint-up(large) {
+    padding: 5rem 10.3125rem;
+    max-width: 89rem;
+  }
   h2 {
     text-align: center;
     font-weight: 300;
@@ -13,6 +14,9 @@
     line-height: 64px;
     letter-spacing: -0.714286px;
     margin: 0 0 1.9375rem 0;
+    @include breakpoint-up(large) {
+      text-align: left;
+    }
   }
   &__grid {
     @include breakpoint-up(medium) {
