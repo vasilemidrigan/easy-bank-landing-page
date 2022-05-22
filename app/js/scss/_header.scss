@@ -85,6 +85,7 @@ header {
     }
   }
   .overlay {
+    z-index: 1;
     opacity: 0;
     background: linear-gradient(to bottom, $dark-blue, transparent);
     position: fixed;
@@ -95,10 +96,12 @@ header {
   }
   // Header Mobile Menu
   .header__mob-menu {
+    z-index: 1;
     position: absolute;
     top: 5.5rem;
     left: 50%;
     width: calc(100% - 3rem);
+    max-width: 20.625rem;
     transform: translateX(-50%);
     margin: 0 0;
     padding: 2rem 0;
