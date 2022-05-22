@@ -108,7 +108,7 @@ a {
   cursor: pointer;
   opacity: 1;
   transition: opacity 300ms ease-in-out;
-
+  box-shadow: rgb(44, 62, 80) 0px 0px 15px 0px;
   &:hover {
     opacity: 0.75;
   }

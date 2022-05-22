@@ -182,6 +182,8 @@ a {
   opacity: 1;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
+  -webkit-box-shadow: #2c3e50 0px 0px 15px 0px;
+          box-shadow: #2c3e50 0px 0px 15px 0px;
 }
 
 .button-cta:hover {
@@ -696,6 +698,10 @@ header .header__mob-menu a:not(:last-child) {
   letter-spacing: -0.285714px;
 }
 
+.articles__grid .article__text h4:hover {
+  color: #31d35c;
+}
+
 .articles__grid .article__text p {
   font-size: 13px;
   line-height: 18px;
@@ -754,6 +760,9 @@ header .header__mob-menu a:not(:last-child) {
     grid-area: socials;
     cursor: pointer;
   }
+  .footer__socials a:hover svg path {
+    fill: #31d35c;
+  }
 }
 
 .footer__links {
@@ -770,6 +779,9 @@ header .header__mob-menu a:not(:last-child) {
   .footer .col1 li span {
     cursor: pointer;
   }
+  .footer .col1 li span:hover {
+    color: #31d35c;
+  }
 }
 
 @media (min-width: 64rem) {
@@ -781,6 +793,9 @@ header .header__mob-menu a:not(:last-child) {
   }
   .footer .col2 li span {
     cursor: pointer;
+  }
+  .footer .col2 li span:hover {
+    color: #31d35c;
   }
 }
 

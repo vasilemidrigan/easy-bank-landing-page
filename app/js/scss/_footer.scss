@@ -40,6 +40,9 @@
     @include breakpoint-up(large) {
       grid-area: socials;
       cursor: pointer;
+      & a:hover svg path {
+        fill: $lime-green;
+      }
     }
   }
   // Navigation Links
@@ -53,6 +56,9 @@
         margin-bottom: 10px;
         & span {
           cursor: pointer;
+          &:hover {
+            color: $lime-green;
+          }
         }
       }
     }
@@ -64,6 +70,9 @@
         margin-bottom: 10px;
         & span {
           cursor: pointer;
+          &:hover {
+            color: $lime-green;
+          }
         }
       }
     }
