@@ -27,6 +27,9 @@
   &__logo {
     @include breakpoint-up(large) {
       grid-area: logo;
+      & img {
+        cursor: pointer;
+      }
     }
   }
   // Social Icon Links
@@ -36,6 +39,7 @@
     }
     @include breakpoint-up(large) {
       grid-area: socials;
+      cursor: pointer;
     }
   }
   // Navigation Links
@@ -47,6 +51,9 @@
       grid-area: links1;
       & li {
         margin-bottom: 10px;
+        & span {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -55,6 +62,9 @@
       grid-area: links2;
       & li {
         margin-bottom: 10px;
+        & span {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -69,6 +79,7 @@
       @include breakpoint-up(large) {
         grid-area: copyright-text;
         text-align: right;
+        cursor: pointer;
       }
     }
     .button-cta {
