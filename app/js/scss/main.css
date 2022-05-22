@@ -701,6 +701,8 @@ header .header__mob-menu a:not(:last-child) {
   color: white;
   text-align: center;
   padding: 2.5rem 4.8125rem;
+  max-width: 89rem;
+  margin: 0 auto;
 }
 
 .footer div:not(:last-child) {
@@ -717,9 +719,8 @@ header .header__mob-menu a:not(:last-child) {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (minmax(30px, 80px))[1];
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template: repeat(1, minmax(30px, 80px))/1fr 1fr 1fr 1fr;
-        grid-template-areas: "logo links1 links2 copyright" "socials links1 links2 copyright";
+        grid-template-rows: repeat(1, minmax(30px, 80px));
+        grid-template-areas: "logo links1 links2 button-cta" "socials links1 links2 copyright-text";
     padding: 3rem 10.3125rem;
   }
 }
@@ -748,11 +749,17 @@ header .header__mob-menu a:not(:last-child) {
   .footer .col1 {
     grid-area: links1;
   }
+  .footer .col1 li {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 64rem) {
   .footer .col2 {
     grid-area: links2;
+  }
+  .footer .col2 li {
+    margin-bottom: 10px;
   }
 }
 
@@ -763,14 +770,22 @@ header .header__mob-menu a:not(:last-child) {
   letter-spacing: -0.234375px;
 }
 
+@media (min-width: 64rem) {
+  .footer__copyright-text {
+    grid-area: copyright-text;
+    text-align: right;
+  }
+}
+
 .footer__copyright .button-cta {
   margin: 0 auto;
   margin-bottom: 1.5rem;
 }
 
 @media (min-width: 64rem) {
-  .footer__copyright {
-    grid-area: copyright;
+  .footer__copyright .button-cta {
+    margin-right: 0;
+    grid-area: button-cta;
   }
 }
 /*# sourceMappingURL=main.css.map */

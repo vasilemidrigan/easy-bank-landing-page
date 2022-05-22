@@ -5,6 +5,8 @@
   color: $white;
   text-align: center;
   padding: 2.5rem 4.8125rem;
+  max-width: 89rem;
+  margin: 0 auto;
   & div:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -15,10 +17,10 @@
   @include breakpoint-up(large) {
     text-align: left;
     display: grid;
-    grid-template: repeat(1, minmax(30px, 80px)) / 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, minmax(30px, 80px));
     grid-template-areas:
-      "logo links1 links2 copyright"
-      "socials links1 links2 copyright";
+      "logo links1 links2 button-cta"
+      "socials links1 links2 copyright-text";
     padding: 3rem 10.3125rem;
   }
   // Logo
@@ -43,26 +45,39 @@
   & .col1 {
     @include breakpoint-up(large) {
       grid-area: links1;
+      & li {
+        margin-bottom: 10px;
+      }
     }
   }
   & .col2 {
     @include breakpoint-up(large) {
       grid-area: links2;
+      & li {
+        margin-bottom: 10px;
+      }
     }
   }
   // Copyrights and Button CTA
   &__copyright {
-    .button-cta {
-      margin: 0 auto;
-      margin-bottom: 1.5rem;
-    }
     // copyright text
     color: $grayish-blue;
     font-size: 15px;
     line-height: 26px;
     letter-spacing: -0.234375px;
-    @include breakpoint-up(large) {
-      grid-area: copyright;
+    &-text {
+      @include breakpoint-up(large) {
+        grid-area: copyright-text;
+        text-align: right;
+      }
+    }
+    .button-cta {
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+      @include breakpoint-up(large) {
+        margin-right: 0;
+        grid-area: button-cta;
+      }
     }
   }
 }
