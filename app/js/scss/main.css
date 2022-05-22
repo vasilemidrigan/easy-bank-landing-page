@@ -394,7 +394,7 @@ header .header__mob-menu a:not(:last-child) {
 @media (min-width: 40rem) {
   .hero__txt {
     margin: 0 auto;
-    padding: 0 6.375rem 5.625rem 3.3125rem;
+    padding: 0 3.3125rem 5.625rem 3.3125rem;
     max-width: 70%;
     text-align: center;
     -webkit-box-flex: 1.5;
