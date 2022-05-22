@@ -73,6 +73,7 @@ Users should be able to:
 ## Author
 
 - Portfolio - [vasilemidrigan.github.io](https://vasilemidrigan.github.io/)
+- LinkedIn - [Vasile Midrigan](https://www.linkedin.com/in/vasile-midrigan/)
+- Github - [vasilemidrigan](https://github.com/vasilemidrigan)
 - Frontend Mentor - [@vasilemidrigan](https://www.frontendmentor.io/profile/vasilemidrigan)
 - Twitter - [@rigan004](https://twitter.com/rigan004)
-- LinkedIn - [Vasile Midrigan](https://www.linkedin.com/in/vasile-midrigan/)
